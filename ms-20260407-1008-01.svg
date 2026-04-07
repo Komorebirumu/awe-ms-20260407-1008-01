@@ -1,0 +1,61 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .background { fill: #1a1a2e; }
+    .galaxy { fill: none; stroke: #e94560; stroke-width: 2; opacity: 0.8; }
+    .nebula-part-1 { fill: #0f3460; opacity: 0.6; }
+    .nebula-part-2 { fill: #16213e; opacity: 0.7; }
+    .star { fill: #f7cac9; }
+    .ai-icon { fill: #00aaff; }
+    .text { fill: #ffffff; font-family: 'Arial', sans-serif; font-weight: bold; }
+    .subtle-text { fill: #cccccc; font-family: 'Arial', sans-serif; font-size: 14px; }
+  </style>
+
+  <!-- Background -->
+  <rect class="background" width="100%" height="100%"/>
+
+  <!-- Nebula - Layer 1 -->
+  <path class="nebula-part-1" d="M100 300 C200 150, 400 150, 500 300 C600 450, 400 450, 300 300 Z"/>
+  <path class="nebula-part-1" d="M300 400 C400 300, 600 300, 700 400 C800 500, 600 500, 500 400 Z"/>
+
+  <!-- Nebula - Layer 2 -->
+  <path class="nebula-part-2" d="M50 400 C150 250, 350 250, 450 400 C550 550, 350 550, 250 400 Z"/>
+  <path class="nebula-part-2" d="M250 500 C350 400, 550 400, 650 500 C750 600, 550 600, 450 500 Z"/>
+
+  <!-- Galaxy Spiral Arms -->
+  <g transform="translate(400, 300) scale(0.8)">
+    <circle cx="0" cy="0" r="150" class="galaxy"/>
+    <circle cx="100" cy="80" r="120" class="galaxy"/>
+    <circle cx="-100" cy="80" r="120" class="galaxy"/>
+    <circle cx="0" cy="-150" r="100" class="galaxy"/>
+  </g>
+
+  <!-- Stars -->
+  <circle cx="50" cy="50" r="2" class="star"/>
+  <circle cx="150" cy="100" r="3" class="star"/>
+  <circle cx="250" cy="30" r="2" class="star"/>
+  <circle cx="350" cy="150" r="1.5" class="star"/>
+  <circle cx="450" cy="70" r="2.5" class="star"/>
+  <circle cx="550" cy="120" r="3" class="star"/>
+  <circle cx="650" cy="50" r="2" class="star"/>
+  <circle cx="750" cy="180" r="1.5" class="star"/>
+  <circle cx="100" cy="250" r="2" class="star"/>
+  <circle cx="300" cy="350" r="2.5" class="star"/>
+  <circle cx="500" cy="450" r="3" class="star"/>
+  <circle cx="700" cy="550" r="2" class="star"/>
+  <circle cx="780" cy="300" r="1.5" class="star"/>
+  <circle cx="70" cy="400" r="2" class="star"/>
+  <circle cx="400" cy="500" r="2.5" class="star"/>
+  <circle cx="600" cy="200" r="3" class="star"/>
+
+  <!-- AI Icon (Stylized) -->
+  <g transform="translate(50, 480) scale(0.5)">
+    <circle cx="0" cy="0" r="30" class="ai-icon"/>
+    <path d="M-15 -15 L15 -15 L0 15 Z" fill="#ffffff"/>
+    <circle cx="0" cy="5" r="5" fill="#1a1a2e"/>
+  </g>
+
+  <!-- Text Overlay -->
+  <text x="150" y="50" class="text">AI-POWERED</text>
+  <text x="150" y="90" class="text">PROCEDURAL VISUALIZATIONS</text>
+  <text x="150" y="150" class="subtle-text">For Space Enthusiasts</text>
+</svg>
